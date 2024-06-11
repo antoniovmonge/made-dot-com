@@ -22,7 +22,6 @@ def allocate(line: OrderLine, batches: List[Batch]) -> str:
         raise OutOfStock(f"Out of stock for sku {line.sku}")
 
 
-
 class Batch:
     def __init__(self, ref: str, sku: str, qty: int, eta: Optional[date]):
         self.reference = ref
